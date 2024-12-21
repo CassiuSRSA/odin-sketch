@@ -1,17 +1,21 @@
-:root {
-  --grid-cols: 1;
-  --grid-rows: 1;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 #container {
-  display: grid;
-  grid-gap: 1em;
-  grid-template-rows: repeat(var(--grid-rows), 1fr);
-  grid-template-columns: repeat(var(--grid-cols), 1fr);
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.grid-item {
-  padding: 1em;
+.flex-item {
+  height: 50px;
+  width: calc(99vw / 16);
   border: 1px solid #ddd;
   text-align: center;
+}
+
+.hovered {
+  background: red;
 }
