@@ -4,6 +4,25 @@
   box-sizing: border-box;
 }
 
+#size-section {
+  width: 960px;
+  margin: 1rem 0;
+
+  text-align: center;
+}
+
+button {
+  background: lightslategray;
+  color: white;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
 #container {
   display: flex;
   flex-wrap: wrap;
@@ -12,7 +31,6 @@
 
 .flex-item {
   height: 50px;
-
   border: 1px solid #ddd;
   text-align: center;
 }
