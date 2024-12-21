@@ -7,11 +7,12 @@
 #container {
   display: flex;
   flex-wrap: wrap;
+  width: 960px;
 }
 
 .flex-item {
   height: 50px;
-  width: calc(99vw / 16);
+
   border: 1px solid #ddd;
   text-align: center;
 }
