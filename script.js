@@ -26,8 +26,13 @@ function makeRows(size) {
   }
 }
 
+const randomColor = () => {
+  return Math.floor(Math.random() * 256);
+};
+
 container.addEventListener("mouseover", (e) => {
   if (e.target.classList.contains("flex-item")) {
-    e.target.classList.add("hovered");
+    console.log(randomColor());
+    e.target.style.backgroundColor = `rgb(${randomColor()},${randomColor()},${randomColor()})`;
   }
 });
